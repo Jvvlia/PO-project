@@ -17,7 +17,7 @@ namespace Wypożyczalnia
         public string Nazwisko { get => nazwisko; set => nazwisko = value; }
         public string Pesel
         {
-            get => pesel; init
+            get => pesel; set
             {
                 if (!WeryfikujPesel(value))
                 {
