@@ -62,15 +62,15 @@ namespace Wypożyczalnia
         public void ZapiszXml(string fname)
         {
             using StreamWriter sw = new(fname);
-            XmlSerializer serializer = new XmlSerializer(typeof(Samochody));
+            XmlSerializer serializer = new XmlSerializer(typeof(Wypozyczenia));
             serializer.Serialize(sw, this);
         }
-        public static Samochody OdczytajXml(string fname)
+        public static Wypozyczenia OdczytajXml(string fname)
         {
             if (!File.Exists(fname)) { return null; }
             using StreamReader sr = new StreamReader(fname);
-            XmlSerializer xs = new(typeof(Samochody));
-            return xs.Deserialize(sr) as Samochody;
+            XmlSerializer xs = new(typeof(Wypozyczenia));
+            return xs.Deserialize(sr) as Wypozyczenia;
         }
     }
 }
