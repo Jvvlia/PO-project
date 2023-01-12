@@ -41,7 +41,7 @@ namespace Wypożyczalnia
 
         public string NumerRejestracyjny
         {
-            get => numerRejestracyjny; init
+            get => numerRejestracyjny; set
             {
                 if (!WeryfikujNumer(numerRejestracyjny)) { throw new ZlyNumerException(); }
                 else { numerRejestracyjny = value; };
