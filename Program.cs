@@ -15,8 +15,9 @@ void TestSamochody()
     auta.Dodaj(sam4);
     auta.Dodaj(sam5);
     auta.Dodaj(sam6);
-    Pracownik prac1 = new("Mateusz", "Kowalski", "12-03-1998", "00000000000", EnumPlec.M);
-    Klient kli1 = new("Kasia", "Jarosz", "12-09-1999", "00000000000", "42222/12/0118", "123456789");
+    Pracownik prac1 = new("Mateusz", "Kowalski", "12-03-1998", "99121953986", EnumPlec.M);
+    Klient kli1 = new("Kasia", "Jarosz", "12-09-1999", "70082186174", "42222/12/0118", "123456789");
+    //pesele: 91052888245, 89031865297, 79100920527, 74021881645, 81071824520, 00222304223, 84070595097, 63122830102, 73112571058
     Console.WriteLine(auta.ToString());
     Wypozyczenie wyp1 = new(sam1, "12-03-2004", "13-03-2004", kli1, prac1);
     Console.WriteLine(wyp1.ToString());
