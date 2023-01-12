@@ -20,34 +20,35 @@ namespace Wypożyczalnia
     internal class Wypozyczenia : IWypozyczenia
     {
         List<Wypozyczenie> wypozyczenia;
+        public List<Wypozyczenie> WypozyczeniaLista { get => wypozyczenia; set => wypozyczenia = value; }
         public Wypozyczenia()
         {
-            wypozyczenia = new();
+            WypozyczeniaLista = new();
         }
         public void DodajWypozyczenie(Wypozyczenie wyp)
         {
             if (wyp is null) { return; }
-            wypozyczenia.Add(wyp);
+            WypozyczeniaLista.Add(wyp);
         }
         public void SortujWypozyczenia()
         {
-            wypozyczenia.Sort(new ComparatorWyp());
+            WypozyczeniaLista.Sort(new ComparatorWyp());
         }
         public void UsunWypozyczenie(string numer)
         {
-            wypozyczenia.Remove(wypozyczenia.Find(p => p.NumerWypozyczenia == numer));
+            WypozyczeniaLista.Remove(wypozyczenia.Find(p => p.NumerWypozyczenia == numer));
         }
         public void WyszukajWypozyczenieK(Klient k)
         {
-            wypozyczenia.FindAll(wyp => wyp.Klient == k);
+            WypozyczeniaLista.FindAll(wyp => wyp.Klient == k);
         }
         public void WyszukajWypozyczenieS(Samochod s)
         {
-            wypozyczenia.FindAll(wyp => wyp.Samochod == s);
+            WypozyczeniaLista.FindAll(wyp => wyp.Samochod == s);
         }
         public void WyszukajWypozyczenieP(Pracownik p)
         {
-            wypozyczenia.FindAll(wyp => wyp.Pracownik == p);
+            WypozyczeniaLista.FindAll(wyp => wyp.Pracownik == p);
         }
         public override string ToString()
         {
