@@ -1,0 +1,20 @@
+﻿<Window x:Class="WypozyczalniaSamochodowGUI.PracownicyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WypozyczalniaSamochodowGUI"
+        mc:Ignorable="d"
+        Title="Pracownicy" Height="450" Width="600">
+    <Grid>
+        <Button x:Name="BtnWyszukaj" Content="Wyszukaj" HorizontalAlignment="Left" Height="36" Margin="258,325,0,0" VerticalAlignment="Top" Width="133" Click="BtnWyszukaj_Click"/>
+        <ListBox x:Name="LstPracownicy" HorizontalAlignment="Left" Height="219" Margin="41,66,0,0" VerticalAlignment="Top" Width="350"/>
+        <Button x:Name="BtnDodaj" Content="Dodaj" HorizontalAlignment="Left" Height="36" Margin="431,66,0,0" VerticalAlignment="Top" Width="133" Click="BtnDodaj_Click"/>
+        <Button x:Name="BtnUsun" Content="Usuń" HorizontalAlignment="Left" Height="36" Margin="431,126,0,0" VerticalAlignment="Top" Width="133" Click="BtnUsun_Click"/>
+        <Button x:Name="BtnSortuj" Content="Sortuj" HorizontalAlignment="Left" Height="36" Margin="431,194,0,0" VerticalAlignment="Top" Width="133" Click="BtnSortuj_Click"/>
+        <TextBox x:Name="TxtWyszukaj" HorizontalAlignment="Left" Height="36" Margin="41,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <Label x:Name="LblWyszukaj" Content="Wyszukaj po imieniu:" HorizontalAlignment="Left" Height="30" Margin="41,290,0,0" VerticalAlignment="Top" Width="259"/>
+        <Label x:Name="LblListaPracownikow" FontSize="26" Content="Lista pracowników" HorizontalAlignment="Left" Height="44" Margin="41,17,0,0" VerticalAlignment="Top" Width="345"/>
+
+    </Grid>
+</Window>
