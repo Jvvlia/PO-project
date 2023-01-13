@@ -66,25 +66,41 @@ namespace WypozyczalniaSamochodowGUI
                 { sam.Wyciagarka = EnumWyciagarka.tak; }
                 else { sam.Wyciagarka = EnumWyciagarka.nie; }
                 
-                if(CmbMarka.Text == "Audi")
+                if (CmbMarka.Text == "Audi")
                 { sam.Marka = EnumMarka.Audi; }
-                else { if(CmbMarka.Text == "BMW") { sam.Marka = EnumMarka.BMW; }
-                else { if(CmbMarka.Text == "Citroen") { sam.Marka = EnumMarka.Citroen; }
-                else { if(CmbMarka.Text == "Dacia") { sam.Marka = EnumMarka.Dacia; } 
-                else { if(CmbMarka.Text == "Fiat") { sam.Marka = EnumMarka.Fiat; }
-                else { if(CmbMarka.Text == "Ford") { sam.Marka = EnumMarka.Ford; }
-                else { if(CmbMarka.Text == "Hyundai") { sam.Marka = EnumMarka.Hyundai; }
-                else { if(CmbMarka.Text == "Kia") { sam.Marka = EnumMarka.Kia; }
-                else { if(CmbMarka.Text == "Mercedes") { sam.Marka = EnumMarka.Mercedes; }
-                else { if(CmbMarka.Text == "Nissa") { sam.Marka = EnumMarka.Nissan; }
-                else { if(CmbMarka.Text == "Opel") { sam.Marka = EnumMarka.Opel; }
-                else { if(CmbMarka.Text == "Peugeot") { sam.Marka = EnumMarka.Peugeot; }
-                else { if(CmbMarka.Text == "Renault") { sam.Marka = EnumMarka.Renault; }
-                else { if(CmbMarka.Text == "SEAT") { sam.Marka = EnumMarka.SEAT; }
-                else { if(CmbMarka.Text == "Skoda") { sam.Marka = EnumMarka.Skoda; }
-                else { if(CmbMarka.Text == "Toyota") { sam.Marka = EnumMarka.Toyota; }
-                else { if(CmbMarka.Text == "Volkswagen") { sam.Marka = EnumMarka.Volkswagen; }
-                else { if(CmbMarka.Text == "Volvo") { sam.Marka = EnumMarka.Volvo; }
+                else{if (CmbMarka.Text == "BMW"){ sam.Marka = EnumMarka.BMW; }
+                    else {if (CmbMarka.Text == "Citroen") { sam.Marka = EnumMarka.Citroen; }
+                        else {if (CmbMarka.Text == "Dacia") { sam.Marka = EnumMarka.Dacia; }
+                            else {if (CmbMarka.Text == "Fiat") { sam.Marka = EnumMarka.Fiat; }
+                                else { if (CmbMarka.Text == "Ford") { sam.Marka = EnumMarka.Ford; }
+                                    else {if (CmbMarka.Text == "Hyundai") { sam.Marka = EnumMarka.Hyundai; }
+                                        else {if (CmbMarka.Text == "Kia") { sam.Marka = EnumMarka.Kia; }
+                                            else {if (CmbMarka.Text == "Mercedes") { sam.Marka = EnumMarka.Mercedes; }
+                                                else {if (CmbMarka.Text == "Nissa") { sam.Marka = EnumMarka.Nissan; }
+                                                    else {if (CmbMarka.Text == "Opel") { sam.Marka = EnumMarka.Opel; }
+                                                        else { if (CmbMarka.Text == "Peugeot") { sam.Marka = EnumMarka.Peugeot; }
+                                                            else { if (CmbMarka.Text == "Renault") { sam.Marka = EnumMarka.Renault; }
+                                                                else {if (CmbMarka.Text == "SEAT") { sam.Marka = EnumMarka.SEAT; }
+                                                                    else { if (CmbMarka.Text == "Skoda") { sam.Marka = EnumMarka.Skoda; }
+                                                                        else {if (CmbMarka.Text == "Toyota") { sam.Marka = EnumMarka.Toyota; }
+                                                                            else {if (CmbMarka.Text == "Volkswagen") { sam.Marka = EnumMarka.Volkswagen; }
+                                                                                else { if (CmbMarka.Text == "Volvo") { sam.Marka = EnumMarka.Volvo; } }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 
                 /*switch (CmbMarka)
                 {
